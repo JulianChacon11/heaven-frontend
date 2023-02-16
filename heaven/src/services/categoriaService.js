@@ -1,15 +1,10 @@
-const categorias = [
-    {
-        id: Number,
-        nombre: String,
-        descripcion: String,
-        
-    }
-]
-const categoriaService = {};
 
+import axios from 'axios';
+
+const categoriaService = {};
+const url = 'http://localhost:8000/api/categorias/';
 categoriaService.getCategorias = () => {
-    return categorias;
+  return axios.get(url).then(response => response.data);
 }
 
 export default categoriaService;

@@ -9,13 +9,13 @@ const Principal = () => {
         <div className="contenedor-menu">
           <div class="dropdown">
             <button class="dropbtn">
-              Dropdown
+              Menu
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="/categorias">Ingresar Categorias</a>
+              <a href="/productos">Ingresar Productos</a>
+              <a href="/vista-productos">Ver productos</a>
             </div>
           </div>
           <img className="menu__imagen" src={Myimg} alt="" />
@@ -34,6 +34,9 @@ const Principal = () => {
           <div className="titulo">
             <h1 className="titulo__1">HEAVEN</h1>
             <h2 className="titulo__2">You don't have to die to experience</h2>
+            <div class="tabla-main">
+              <input type="text" id="cons-categorias" name="cons-categorias" placeholder="Busca un producto ...."></input>
+            </div>
           </div>
         </section>
       </main>
